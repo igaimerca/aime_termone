@@ -1,0 +1,57 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  font-family: monospace;
+  font-size: 1.2rem;
+}
+
+.container {
+  width: 50vw;
+  background: rgba(59, 130, 246, 0.1);
+  padding: 2rem;
+  display: flex;
+  border-radius: 10px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+button {
+  padding: 1rem 2rem;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  background: dodgerblue;
+  color: #fff;
+}
+input,
+select {
+  outline: none;
+  border: 1px solid #eef;
+  padding: 3px;
+  height: 30px;
+  font-size: 20px;
+  width: 80px;
+}
+select {
+  margin-top: 0.4rem;
+}
+.calc {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+.input-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
