@@ -1,11 +1,10 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './App.css'
-import Button from './components/Button'
-import NumberInput from './components/NumberInput'
-import Select from './components/Select'
+import Form from './components/Form'
+import axios from 'axios'
 
 const App = () => {
-  const [answer, setAnswer] = React.useState(0);
+  const [answer, setAnswer] = useState(0);
   const [loading, setLoading] = useState(false);
 
   const handleSubmit = async (e) => {
@@ -26,12 +25,7 @@ const App = () => {
   return (
     <div className="container">
       <h1>Calculator</h1>
-      <div className="calc">
-        <NumberInput label="Operand 1" />
-        <Select />
-        <NumberInput label="Operand 2" />
-      </ div>
-      <Button onSubmit={handleSubmit} />
+      <Form />
       <div className="answer">
         Solution: {answer}
       </div>
